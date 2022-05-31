@@ -1,0 +1,11 @@
+# print current date and time
+from datetime import datetime
+import pytz # for timezone() 
+today = date.today()
+#print(today) # print in yyyy-mm-dd format
+#print(today.strftime("%d/%m/%Y")) # print in dd/mm/yyyy format
+#print(today.strftime("%m/%d/%Y")) # print in mm/dd/yyyy format
+#print(today.strftime("%B %d, %Y")) # print in Month dd, yyyy format
+#print(today.strftime("%b-%d-%Y")) # print in Mon-dd-yyyy format
+time_now = datetime.now(pytz.timezone('Asia/Kolkata')) # get India time zone
+print(time_now)
